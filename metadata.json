@@ -1,0 +1,5 @@
+{
+  "name": "Remix: Python Script Converter",
+  "description": "A web application that replicates the exact functionality of a provided Python script.",
+  "requestFramePermissions": []
+}
