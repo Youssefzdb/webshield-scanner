@@ -1,20 +1,49 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# WebShield Scanner
 
-# Run and deploy your AI Studio app
+> Automated Web Application Vulnerability Scanner
 
-This contains everything you need to run your app locally.
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-View your app in AI Studio: https://ai.studio/apps/75c55670-73b7-482b-bd4f-e4ef3e7edf0d
+## Overview
 
-## Run Locally
+WebShield Scanner is an automated web application security testing tool that identifies common vulnerabilities including XSS, SQL Injection, CSRF, and misconfigured security headers.
 
-**Prerequisites:**  Node.js
+## Features
 
+- 🔍 **XSS Detection** — Reflected, stored, and DOM-based XSS
+- 💉 **SQL Injection** — Automated SQLi payload testing
+- 🔐 **Auth Testing** — Broken authentication & session management
+- 📋 **Header Analysis** — Security headers audit (CSP, HSTS, X-Frame)
+- 🗺️ **Crawler** — Smart endpoint discovery and mapping
+- 📊 **Reports** — Detailed HTML vulnerability reports
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Installation
+
+```bash
+git clone https://github.com/Youssefzdb/Film-s-ries-
+cd Film-s-ries-
+npm install
+```
+
+## Usage
+
+```bash
+npm run scan -- --target https://example.com
+npm run scan -- --target https://example.com --mode full
+```
+
+## Scan Modes
+
+| Mode | Description |
+|------|-------------|
+| `quick` | Fast scan — headers + basic XSS/SQLi |
+| `full` | Deep scan — all modules enabled |
+| `stealth` | Low-noise scan for sensitive targets |
+
+## Disclaimer
+
+> For authorized testing only. Get written permission before scanning any target.
+
+## Author
+
+**Shadow Core** — Web Application Security Specialist
